@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Additive Manufacturing &amp; 3D Printing · Course Hub</title>
+  <!-- Font & Icons (CDN) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- external CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER / NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <div class="logo"><i class="fas fa-cube"></i> AM · 3DP</div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#intro" class="active">Intro</a></li>
+        <li><a href="#syllabus">Syllabus</a></li>
+        <li><a href="#calendar">Calendar</a></li>
+        <li><a href="#polymer">Polymer</a></li>
+        <li><a href="#metal">Metal</a></li>
+        <li><a href="#dfam">DfAM</a></li>
+        <li><a href="#copomap">CO-PO</a></li>
+        <li><a href="#resources">Resources</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- INTRO -->
+    <section id="intro">
+      <div class="container">
+        <div class="section-title"><i class="fas fa-print"></i> Introduction to AM</div>
+        <div class="card-grid">
+          <div class="card">
+            <h3><i class="fas fa-sync-alt"></i> AM vs Conventional</h3>
+            <p>Additive manufacturing builds parts layer by layer, enabling complex geometries with minimal waste — unlike subtractive (cutting) or formative (molding) processes.</p>
+          </div>
+          <div class="card">
+            <h3><i class="fas fa-history"></i> Evolution &amp; Standards</h3>
+            <p>From rapid prototyping to production-grade parts. ASTM/ISO 52900 classifies 7 process categories: from Vat Photopolymerization to Directed Energy Deposition.</p>
+          </div>
+          <div class="card">
+            <h3><i class="fas fa-cogs"></i> Generic Process Chain</h3>
+            <p><strong>CAD → STL → Slice → Build → Post-process</strong>. Digital workflow that transforms a 3D model into a physical component.</p>
+          </div>
+        </div>
+        <div class="content-list">
+          <p><span class="badge">CO1</span> <strong>Learning outcome:</strong> Distinguish between additive, subtractive, and formative manufacturing. Classify AM processes per ASTM/ISO 52900.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SYLLABUS (revised 6 modules) -->
+    <section id="syllabus">
+      <div class="container">
+        <div class="section-title"><i class="fas fa-book-open"></i> Revised Syllabus <span style="font-size:0.9rem; font-weight:400; margin-left:0.6rem;">(6 modules · 10 weeks)</span></div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Module</th><th>Title</th><th>Key Topics</th><th>CO</th><th>Dur.</th></tr></thead>
+            <tbody>
+              <tr><td><strong>1</strong></td><td>Introduction to AM</td><td>AM vs conventional, history, generic process chain, ISO/ASTM 52900</td><td>CO1</td><td>1 wk</td></tr>
+              <tr><td><strong>2</strong></td><td>Polymer-Based AM</td><td>FDM/FFF, SLA/DLP, SLS</td><td>CO2</td><td>2 wks</td></tr>
+              <tr><td><strong>3</strong></td><td>Metal-Based AM &amp; Comparative Analysis</td><td>SLM/DMLS, DED, Binder Jetting; process selection lab</td><td>CO3</td><td>2 wks</td></tr>
+              <tr><td><strong>4</strong></td><td>DfAM &amp; Software Tools</td><td>Topology optimization, CAD-to-print workflow, slicing hands-on</td><td>CO4</td><td>2 wks</td></tr>
+              <tr><td><strong>5</strong></td><td>Applications, Quality &amp; Future Trends</td><td>Post-processing, QC, sustainability, 4D printing</td><td>CO5</td><td>1 wk</td></tr>
+              <tr><td><strong>6 (new)</strong></td><td>Design-for-Impact Capstone</td><td>Team-based design of original AM prototype, CAD+print+pitch</td><td>CO6</td><td>2 wks</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-muted" style="margin-top:0.3rem;"><i class="fas fa-asterisk" style="color:#0f5b7a;"></i> Post-audit revision: CO3 upgraded to L4, CO6 added at L6 (Bloom's / NEP).</p>
+      </div>
+    </section>
+
+    <!-- CALENDAR -->
+    <section id="calendar">
+      <div class="container">
+        <div class="section-title"><i class="fas fa-calendar-alt"></i> Course Calendar</div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Week</th><th>Module</th><th>Topics Covered</th><th>CO</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>Intro to AM</td><td>AM vs conventional, history, process chain (CAD→STL→slice→build→post)</td><td>CO1</td></tr>
+              <tr><td>2</td><td>Intro to AM</td><td>ISO/ASTM 52900 classification; applications overview</td><td>CO1</td></tr>
+              <tr><td>3</td><td>Polymer-Based AM</td><td>Material Extrusion (FDM/FFF): principle, materials, parameters</td><td>CO2</td></tr>
+              <tr><td>4</td><td>Polymer-Based AM</td><td>Vat Photopolymerization (SLA/DLP) &amp; SLS; comparison, troubleshooting</td><td>CO2</td></tr>
+              <tr><td>5</td><td>Metal-Based AM</td><td>SLM/DMLS principle; metal powders; microstructure</td><td>CO3</td></tr>
+              <tr><td>6</td><td>Metal &amp; Comparative</td><td>DED &amp; Binder Jetting; Process Selection Lab (analyze &amp; compare)</td><td>CO3</td></tr>
+              <tr><td>7</td><td>DfAM &amp; Tools</td><td>DfAM principles: topology optimization, lattices; CAD-to-print workflow</td><td>CO4</td></tr>
+              <tr><td>8</td><td>DfAM &amp; Tools</td><td>Slicing basics; hands-on slicing exercise</td><td>CO4</td></tr>
+              <tr><td>9</td><td>Applications &amp; Trends</td><td>Post-processing, QC; sustainability; 4D printing &amp; emerging trends</td><td>CO5</td></tr>
+              <tr><td>10</td><td>Design-for-Impact Capstone</td><td>Team project: design, print &amp; pitch an original AM solution</td><td>CO6</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- POLYMER -->
+    <section id="polymer">
+      <div class="container">
+        <div class="section-title"><i class="fas fa-cubes"></i> Polymer-Based AM</div>
+        <div class="card-grid">
+          <div class="card"><h3><i class="fas fa-thermometer-half"></i> FDM / FFF</h3><p>Material extrusion: thermoplastic filament melted and deposited layer by layer. Key parameters: nozzle temp, bed adhesion, infill.</p></div>
+          <div class="card"><h3><i class="fas fa-sun"></i> SLA / DLP</h3><p>Vat photopolymerization: UV light cures liquid resin. High resolution, smooth surface finish.</p></div>
+          <div class="card"><h3><i class="fas fa-fire"></i> SLS (Polymer)</h3><p>Powder bed fusion: laser sinters polymer powder. No supports needed, good mechanical properties.</p></div>
+        </div>
+        <div class="content-list">
+          <p><span class="badge">CO2</span> <strong>Compare</strong> FDM, SLA/DLP and SLS for polymers. Identify basic troubleshooting for build failures.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- METAL -->
+    <section id="metal">
+      <div class="container">
+        <div class="section-title"><i class="fas fa-industry"></i> Metal-Based AM</div>
+        <div class="card-grid">
+          <div class="card"><h3><i class="fas fa-bolt"></i> SLM / DMLS</h3><p>Powder bed fusion for metals. High-energy laser melts metal powder, building dense, complex parts.</p></div>
+          <div class="card"><h3><i class="fas fa-arrow-up"></i> DED</h3><p>Directed Energy Deposition: metal powder or wire melted by laser/electron beam, used for repair and large parts.</p></div>
+          <div class="card"><h3><i class="fas fa-tint"></i> Binder Jetting</h3><p>Liquid binder selectively deposited on metal powder; green part later sintered.</p></div>
+        </div>
+        <div class="content-list">
+          <p><span class="badge">CO3</span> <strong>Analyze and compare</strong> metal AM processes on cost, material, suitability. Understand microstructure &amp; properties.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DfAM -->
+    <section id="dfam">
+      <div class="container">
+        <div class="section-title"><i class="fas fa-drafting-compass"></i> DfAM &amp; Software Tools</div>
+        <div class="card-grid">
+          <div class="card"><h3><i class="fas fa-shapes"></i> Topology Optimization</h3><p>Generative design: material placement based on load paths, reducing weight while maintaining strength.</p></div>
+          <div class="card"><h3><i class="fas fa-th"></i> Lattices</h3><p>Periodic &amp; stochastic cellular structures. Enable lightweight, energy-absorbing, and bio-inspired designs.</p></div>
+          <div class="card"><h3><i class="fas fa-sliders-h"></i> Slicing &amp; Toolpath</h3><p>CAD-to-print workflow: from STL to G-code. Hands-on slicing exercise with orientation and supports.</p></div>
+        </div>
+        <div class="content-list">
+          <p><span class="badge">CO4</span> <strong>Apply</strong> DfAM principles including topology optimization and lattice generation in digital CAD workflows.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CO-PO MAPPING -->
+    <section id="copomap">
+      <div class="container">
+        <div class="section-title"><i class="fas fa-table"></i> CO-PO Mapping <span style="font-size:0.9rem; font-weight:400; margin-left:0.6rem;">(NBA · 11 POs)</span></div>
+        <div class="table-wrap">
+          <table class="co-po-grid">
+            <thead><tr><th>CO</th><th>PO1</th><th>PO2</th><th>PO3</th><th>PO4</th><th>PO5</th><th>PO6</th><th>PO7</th><th>PO8</th><th>PO9</th><th>PO10</th><th>PO11</th></tr></thead>
+            <tbody>
+              <tr><td>CO1</td><td>3</td><td>1</td><td>1</td><td>-</td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td><td>1</td><td>-</td></tr>
+              <tr><td>CO2</td><td>3</td><td>2</td><td>1</td><td>-</td><td>2</td><td>-</td><td>-</td><td>-</td><td>1</td><td>-</td><td>-</td></tr>
+              <tr><td>CO3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>-</td><td>1</td><td>-</td><td>-</td></tr>
+              <tr><td>CO4</td><td>2</td><td>2</td><td>3</td><td>1</td><td>3</td><td>-</td><td>-</td><td>-</td><td>2</td><td>1</td><td>-</td></tr>
+              <tr><td>CO5</td><td>2</td><td>3</td><td>2</td><td>1</td><td>2</td><td>2</td><td>2</td><td>1</td><td>2</td><td>2</td><td>1</td></tr>
+              <tr><td>CO6</td><td>2</td><td>3</td><td>3</td><td>2</td><td>3</td><td>2</td><td>2</td><td>2</td><td>3</td><td>3</td><td>2</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="scale-note"><i class="fas fa-circle" style="color:#1b7a9e;"></i> 3 = High · 2 = Medium · 1 = Low · – = no correlation</div>
+      </div>
+    </section>
+
+    <!-- RESOURCES -->
+    <section id="resources">
+      <div class="container">
+        <div class="section-title"><i class="fas fa-book"></i> Resources &amp; References</div>
+        <div class="ref-grid">
+          <span><i class="fas fa-book"></i> Gibson, Rosen &amp; Stucker, <em>Additive Manufacturing Technologies</em> (3rd ed.)</span>
+          <span><i class="fas fa-file-alt"></i> ASTM/ISO 52900:2021</span>
+          <span><i class="fas fa-newspaper"></i> Ngo et al., “AM review”, Composites Part B, 2018</span>
+          <span><i class="fas fa-flask"></i> Frazier, W.E., “Metal AM review”, J. Mater. Engg., 2014</span>
+          <span><i class="fas fa-blog"></i> Formlabs / All3DP technical blogs</span>
+          <span><i class="fas fa-chart-line"></i> NIST &amp; Wohlers Report</span>
+        </div>
+        <div style="margin-top:1.8rem; background:#fff; border-radius:24px; padding:1.5rem 2rem; border:1px solid #e6edf4;">
+          <p><strong><i class="fas fa-graduation-cap"></i> Measurable Learning Outcomes</strong></p>
+          <ul style="list-style:square; padding-left:1.5rem; margin-top:0.5rem;">
+            <li>Distinguish between additive, subtractive, formative manufacturing.</li>
+            <li>Classify AM processes into 7 ASTM/ISO categories.</li>
+            <li>Apply DfAM principles: topology optimization &amp; lattices.</li>
+            <li>Identify post-processing &amp; QC protocols for polymers and metals.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p><i class="fas fa-cube"></i> Additive Manufacturing &amp; 3D Printing · First-Year Engineering · Revised 2026</p>
+      <p style="font-size:0.8rem; opacity:0.7; margin-top:0.3rem;">Based on post-audit syllabus · CO3 (L4) &amp; CO6 (L6) · NEP aligned</p>
+    </div>
+  </footer>
+
+  <!-- external JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
